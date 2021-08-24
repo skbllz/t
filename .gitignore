@@ -8,7 +8,6 @@ bin/tor/
 .gnupg
 .serverauth*
 .ssh
-.urxvt
 .yarnrc
 .zhistory
 D*

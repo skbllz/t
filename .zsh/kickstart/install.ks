@@ -127,6 +127,7 @@ grub2-install /dev/sda
 
 %packages --excludedocs
 
+<<<<<<< HEAD
 @core                 	# Smallest possible installation
 alsa-firmware         	# Firmware for several ALSA-supported sound cards
 chrony 				        	# An NTP client/server

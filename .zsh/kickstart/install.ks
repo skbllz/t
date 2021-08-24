@@ -127,26 +127,26 @@ grub2-install /dev/sda
 
 %packages --excludedocs
 
-@core										# Smallest possible installation
+@core                   # Smallest possible installation
 alsa-firmware         	# Firmware for several ALSA-supported sound cards
-chrony 				        	# An NTP client/server
+chrony                  # An NTP client/server
 dbus-x11              	# X11-requiring add-ons for D-BUS
-dmenu      			      	# Generic menu for X
+dmenu                   # Generic menu for X
 firefox               	# Mozilla Firefox Web browser
 glx-utils             	# GLX utilities
-i3 											# Improved tiling window manager
-i3status 								# Status bar generator for i3bar, dzen2, xmobar or similar programs
-i3lock 									# Simple X display locker like slock
+i3                      # Improved tiling window manager
+i3status                # Status bar generator for i3bar, dzen2, xmobar or similar programs
+i3lock                  # Simple X display locker like slock
 iwl5000-firmware      	# Firmware for Intel® PRO/Wireless 5000 A/G/N network adaptors
 mesa-dri-drivers      	# Mesa-based DRI drivers
 nautilus              	# File manager for GNOME File manager for GNOME
-neovim 									# Vim-fork focused on extensibility and agility
+neovim                  # Vim-fork focused on extensibility and agility
 network-manager-applet	# A network control and status applet for NetworkManager
 NetworkManager-wifi   	# Wifi plugin for NetworkManager
 pavucontrol           	# Volume control for PulseAudio
-python3-neovim					# Python client to Neovim
+python3-neovim          # Python client to Neovim
 rxvt-unicode          	# 256 color version of rxvt-unicode
-snapd 									# A transactional software package manager
+snapd                   # A transactional software package manager
 util-linux-user       	# libuser based util-linux utilities
 wireless-tools-devel  	# Development headers for the wireless-tools package
 xorg-x11-drv-ati      	# AMD/ATI video driver

@@ -1,0 +1,60 @@
+{
+    "suggest.snippetIndicator": "►",
+    "diagnostic.errorSign": "✘",
+    "diagnostic.warningSign": "!",
+    "diagnostic.infoSign": "?",
+    "diagnostic.checkCurrentLine": true,
+    "coc.preferences.formatOnSaveFiletypes": [ "c", "css", "go", "html", "json", "sh", "zsh" ],
+    "html.autoClosingTags": true,
+    "eslint.autoFixOnSave": true,
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        },
+         "ccls": {
+            "command": "ccls",
+            "filetypes": [ "c", "cpp" ],
+            "rootPatterns": [ "compile_commands.json", "git/", ".hg/"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        },
+        "dockerfile": {
+            "command": "docker-langserver",
+            "filetypes": [ "dockerfile" ],
+            "args": [ "--stdio" ]
+        },
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": [
+                "go.mod"
+            ],
+            "filetypes": [
+                "go"
+            ],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        },
+        "sql": {
+            "command": "sql-language-server",
+            "args": [ "up", "--method", "stdio" ],
+            "filetypes": [ "sql", "mysql" ]
+        }
+    },
+    "go.goplsOptions": {
+        "staticcheck": true
+    }
+}

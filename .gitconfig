@@ -1,0 +1,19 @@
+[user]
+	name = skbllz
+	email = acesperanca@sapo.pt
+[core]
+	editor = nvim
+	excludesfiles = ~/.gitignore_global
+	pager = more
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+[init]
+	defaultBranch = main
+[alias]
+[color]
+	ui = auto
+  status=auto
+  branch=auto
+  interactive=auto
+  diff=auto
+[color "diff"]
+	meta = blue black bold

@@ -106,6 +106,11 @@ postgres() {
 	fi
 }
 
+# post-install
+dnf_post() {
+	sudo dnf install -y `cat ~/.zsh/data/* | grep -v '#'`
+}
+
 # make distro usb
 dd_distro_usb() { sudo dd if=$1 of=${2:-/dev/sdc} bs=1M status=progress oflag=direct conv=sync }
 

@@ -1,0 +1,6 @@
+#!/usr/bin/zsh
+
+curl -sL \
+	"https://raw.githubusercontent.com/pystardust/ytfzf/master/ytfzf" | sudo tee /usr/bin/ytfzf >/dev/null && sudo chmod 755 /usr/bin/ytfzf
+
+exit 0

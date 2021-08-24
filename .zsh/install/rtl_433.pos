@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+# https://github.com/merbanan/rtl_433
+sudo dnf install -y libtool libusbx-devel rtl-sdr-devel rtl-sdr cmake
+sudo dnf copr enable -y tvass/rtl_433
+sudo dnf install -y rtl_433
+
+exit 0

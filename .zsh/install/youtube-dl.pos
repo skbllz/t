@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+# https://rg3.github.io/youtube-dl/download.html
+if [[ ! -f /usr/local/bin/youtube-dl ]]; then
+	sudo curl -Ls https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+	sudo chmod a+rx /usr/local/bin/youtube-dl
+fi
+
+# https://github.com/dlh/youtube-dl-parallel
+if [[ ! -d /opt/youtube-dl-parallel ]]; then
+	sudo git clone https://github.com/dlh/youtube-dl-parallel /opt/youtube-dl-parallel
+fi
+
+if [[ ! -f /usr/local/bin/youtube-dl-parallel ]]; then
+	sudo ln -s /opt/youtube-dl-parallel/youtube-dl-parallel /usr/local/bin/youtube-dl-parallel
+	sudo chmod a+rx /usr/local/bin/youtube-dl-parallel
+fi
+
+exit 0

@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+
+EXISTS=$(rpm -qa | grep cockpit)
+
+[ -z "$EXISTS" ] && sudo dnf install cockpit -y && sudo systemctl enable cockpit.socket
+
+exit 0

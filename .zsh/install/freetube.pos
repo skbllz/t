@@ -1,0 +1,23 @@
+#!/usr/bin/zsh
+
+# version
+export VER="${1:-0.11.1}"
+
+# remove old version
+EXISTS=$(rpm -qa | grep freetube)
+if [ ! -z "$EXISTS" ]; then
+	sudo dnf remove -y "$EXISTS"
+fi
+
+# download freetube
+wget -cq \
+	https://github.com/FreeTubeApp/FreeTube/releases/download/v${VER}-beta/freetube_${VER}_amd64.rpm \
+	-O freetube-${VER}.rpm
+
+# install
+sudo dnf install -y freetube-${VER}.rpm
+
+# # clean
+rm -f freetube-*
+
+exit 0

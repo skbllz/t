@@ -1,0 +1,17 @@
+#!/usr/bin/zsh
+# https://fedoramagazine.org/docker-and-fedora-32/
+
+# enable old CGroups
+sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+
+# install Moby
+sudo dnf install moby-engine docker-compose -y
+
+# enable Docker
+sudo systemctl enable docker
+
+# running as admin
+# sudo groupadd docker
+sudo usermod -aG docker $USER
+
+exit 0

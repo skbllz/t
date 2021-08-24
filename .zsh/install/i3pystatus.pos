@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+
+sudo dnf install -y python3-colour python3-dbus python3-devel python3-netifaces python3-psutil
+
+yes | sudo pip3 install basiciw git+https://github.com/enkore/i3pystatus.git
+
+exit 0

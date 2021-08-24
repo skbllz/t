@@ -127,8 +127,7 @@ grub2-install /dev/sda
 
 %packages --excludedocs
 
-<<<<<<< HEAD
-@core                 	# Smallest possible installation
+@core										# Smallest possible installation
 alsa-firmware         	# Firmware for several ALSA-supported sound cards
 chrony 				        	# An NTP client/server
 dbus-x11              	# X11-requiring add-ons for D-BUS

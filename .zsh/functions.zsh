@@ -29,6 +29,13 @@ gcc_thread(){
 	gcc -Wall -Wextra -O3 -o $nam $1 -lm -lpthread; ./"$nam"
 }
 
+# grub
+grub_repair() {
+	sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+	sudo grub2-install /dev/sda
+	sudo reboot
+}
+
 # clear empty lines
 clear_empty_lines() { sed '/^\s*$/d' $1 > $2 }
 

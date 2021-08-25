@@ -1,0 +1,29 @@
+#!/usr/bin/zsh
+
+FILE='/usr/share/applications/nvim.desktop'
+PLUG='/home/t/.local/share/nvim/site/autoload/plug.vim'
+EXISTS=$(snap list | grep clangd | cut -d ' ' -f1)
+GREP=$(grep 'Terminal=false' $FILE)
+
+# snapd
+if [[ -z $EXISTS ]] then; 
+	echo "Instaling clangd..."
+	sudo snap install clangd --classic
+fi
+
+# plug
+if [[ -z $PLUG ]] then;
+	echo "Instaling plug..."
+	sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+fi
+
+# nvim.desktop
+if [[ -z $GREP ]]; then
+	sudo sed -i 's/Terminal=true/Terminal=false/g' $FILE
+	sudo sed -i 's/Exec=nvim\ %F/Exec=urxvt256c\ -e\ nvim\ %F/g' $FILE
+fi
+
+echo "Neovim is up to date!"
+
+exit 0

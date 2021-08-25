@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/zsh
 
 # https://rg3.github.io/youtube-dl/download.html
 if [[ ! -f /usr/local/bin/youtube-dl ]]; then
@@ -15,5 +15,7 @@ if [[ ! -f /usr/local/bin/youtube-dl-parallel ]]; then
 	sudo ln -s /opt/youtube-dl-parallel/youtube-dl-parallel /usr/local/bin/youtube-dl-parallel
 	sudo chmod a+rx /usr/local/bin/youtube-dl-parallel
 fi
+
+echo "youtube-dl and youtube-dl-parallel are up to date!"
 
 exit 0

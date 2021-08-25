@@ -108,9 +108,8 @@ alias nmapfe='beesu nmapfe'
 # openCPN
 alias openCPN='flatpak run org.opencpn.OpenCPN'
 
-# pos_install
-alias pos_install='zsh ~/bin/pos_install'
-
+# post-install
+alias post-install='~/.zsh/install/post-install/post-install.zsh'
 # qutebrowser
 alias qutebrowser='flatpak run org.qutebrowser.qutebrowser'
 

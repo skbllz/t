@@ -12,7 +12,6 @@ source "/home/t/.zsh/directory.zsh"
 source "/home/t/.zsh/alias.zsh"
 source "/home/t/.zsh/functions.zsh"
 source "/home/t/.zsh/fzf.zsh"
-source "/home/t/.zsh/post-install.zsh"
 
 # autoload zsh functions
 autoload -Uz zmv

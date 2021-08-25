@@ -11,10 +11,10 @@ RPMFUSION=$(rpm -qa | grep rpmfusion)
 dnf_post() {
 	# rpmfusion
 	if [[ -z $RPMFUSION ]]; then
-		sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+		sudo dnf install -y  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 		sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 	fi
-	# update
+	#update
 	sudo dnf update -y
 	# packages
 	sudo dnf install -y `cat $DNF/data | grep -v '#'`

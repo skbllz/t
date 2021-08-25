@@ -7,7 +7,7 @@ exec --no-startup-id i3-msg exec thunderbird
 exec --no-startup-id i3-msg exec nautilus
 # exec_always --no-startup-id com.github.johnfactotum.Foliate
 # exec --no-startup-id i3-msg exec evince '/home/t/Downloads/"New Perspectives on HTML 5 and CSS.pdf"'
-exec --no-startup-id i3-msg exec "DESKTOP_SESSION=gnome freetube %U"
+exec --no-startup-id i3-msg exec "/opt/FreeTube/freetube %U"
 exec --no-startup-id i3-msg workspace 1
 
 # border style
@@ -39,7 +39,7 @@ bindsym Mod4+f         exec firefox
 bindsym Mod4+g         exec "beesu gparted"
 bindsym Mod4+k         exec kodi; workspace 9
 bindsym Mod4+n         exec nautilus
-bindsym Mod4+m         exec "DESKTOP_SESSION=gnome freetube %U"
+bindsym Mod4+m         exec "/opt/FreeTube/freetube %U"
 bindsym Print          exec gnome-screenshot --interactive
 bindsym Mod4+p         exec pavucontrol
 bindsym Mod4+Return    exec urxvt256c

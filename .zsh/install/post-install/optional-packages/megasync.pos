@@ -1,0 +1,11 @@
+#!/usr/bin/zsh
+
+MEGA=$(rpm -qa | grep megasync)
+
+if [[ -z $MEGA ]]; then
+    sudo dnf install -y megasync megatools nautilus-megasync
+fi
+
+echo "Megasync is up to date!"
+
+exit 0

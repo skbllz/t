@@ -1,6 +1,7 @@
-! https://addy-dclxvi.github.io/post/configuring-urxvt/
-!
-!! Colorscheme
+! .Xresources
+! aug 21
+
+!! colorscheme
 
 ! special
 *.foreground: #93a1a1
@@ -40,11 +41,13 @@
 *.color15: #fdf6e3
 
 ! fonts
-URxvt*font: xft:Fira Code Retina:pixelsize=17;hinting=True;antialias=True
-URxvt*boldFont: xft:Fira Code Retina:pixelsize=17;hinting=True;antialias=True
+URxvt.font: xft:Go Mono for Powerline=17;hinting=True;antialias=True
+URxvt.boldFont: xft:Go Mono Bold for Powerline=17;hinting=True;antialias=True
+URxvt.italicFont: xft:Go Mono Italic for Powerline=17;hinting=True;antialias=True
+URxvt.boldItalicfont:xft:Go Mono Bold Italic for Powerline=17;hinting=True;antialias=True 
 
-!! URxvt Appearance
-URxvt*letterSpace: -1
+!! urxvt appearance
+URxvt.letterSpace: -1
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
 URxvt.internalBorder: 24
@@ -57,7 +60,7 @@ URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
 
-!! Common Keybinds for Navigations
+!! common keybinds for navigations
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
 URxvt.keysym.Control-Up: \033[1;5A
@@ -65,7 +68,7 @@ URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
-!! Copy Paste & Other Extensions
+!! copy paste & other extensions
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard

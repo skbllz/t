@@ -1,0 +1,12 @@
+#!/usr/bin/zsh
+
+RTL=$(rpm -qa | grep rtl_433)
+
+if [[ -z $RTL ]]; then
+	sudo dnf copr enable -y tvass/rtl_433
+	sudo dnf install -y rtl_433
+fi
+
+echo "rtl_433 is up to date!"
+
+exit 0

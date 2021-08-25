@@ -1,0 +1,20 @@
+#!/usr/bin/zsh
+
+MOBY=$(rpm -qa | grep moby)
+DOCKER=$(rpm -qa | grep docker-compose)
+
+if [[ -z $MOBY || -z $DOCKER ]]; then
+	# enable old CGroups
+	sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+	# install Moby
+	sudo dnf install moby-engine docker-compose -y
+	# enable Docker
+	sudo systemctl enable docker
+	# running as admin
+	# sudo groupadd docker
+	sudo usermod -aG docker $USER
+fi
+
+echo "Docker is up to date!"
+
+exit 0

@@ -1,0 +1,12 @@
+#!/usr/bin/zsh
+
+YTFZF='/usr/bin/ytfzf'
+
+if [[ -z $YTFZF ]] then;
+	curl -sL \
+		"https://raw.githubusercontent.com/pystardust/ytfzf/master/ytfzf" | sudo tee /usr/bin/ytfzf >/dev/null && sudo chmod 755 /usr/bin/ytfzf
+fi
+
+echo "ytfzf is up to date!"
+
+exit 0

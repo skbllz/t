@@ -1,0 +1,20 @@
+#!/usr/bin/zsh
+
+# version
+export VER="${1:-0.13.2}"
+
+# get existing version
+EXISTS=$(rpm -qa | grep freetube | cut -d'-' -f2)
+
+if [[ $EXISTS < $VER ]]; then
+	# download 
+	wget -cq \
+		https://github.com/FreeTubeApp/FreeTube/releases/download/v${VER}-beta/freetube_${VER}_amd64.rpm \
+		-O /tmp/freetube-${VER}.rpm
+	# install
+	sudo dnf install -y /tmp/freetube-${VER}.rpm
+fi
+
+printf "FreeTubeApp is up to date!\n"
+
+exit 0

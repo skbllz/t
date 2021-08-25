@@ -1,5 +1,0 @@
-#!/usr/bin/zsh
-
-yes | sudo pip3 install basiciw git+https://github.com/enkore/i3pystatus.git
-
-exit 0

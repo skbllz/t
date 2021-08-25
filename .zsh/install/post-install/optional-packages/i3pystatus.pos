@@ -1,0 +1,12 @@
+#!/usr/bin/zsh
+
+I3PYSTATUS=$(pip list | grep i3pystatus | cut -d' ' -f1)
+BASICIW=$(pip list | grep basiciw | cut -d' ' -f1)
+
+if [[ -z "$I3PYSTATUS" || -z "$BASICIW" ]]; then
+	yes | pip install --user install basiciw git+https://github.com/enkore/i3pystatus.git
+fi
+
+printf "i3pystatus is up to date!\n"
+
+exit 0

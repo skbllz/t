@@ -1,6 +1,11 @@
+#!/usr/bin/zsh
 # post-install.zsh
 # aug 21
- 
+
+# directories
+DNF=~/.zsh/install/post-install/dnf-packages
+OPT=~/.zsh/install/post-install/optional-packages
+
 # dnf post install packages
 dnf_post() {
 	# rpmfusion
@@ -8,15 +13,17 @@ dnf_post() {
   sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 	sudo dnf update -y
 	# packages
-	sudo dnf install -y `cat ~/.zsh/data/* | grep -v '#'`
+	sudo dnf install -y `cat $DNF/data | grep -v '#'`
 }
 
+dnf_post
+
 # optional
-./install/docker.pos
-./install/freetube.pos
-./install/i3pystatus.pos
-./install/neovim.pos
-./install/youtube-dl.pos
-./install/ytfzf.pos
+$OPT/docker.pos
+$OPT/freetube.pos
+$OPT/i3pystatus.pos
+$OPT/neovim.pos
+$OPT/youtube-dl.pos
+$OPT/ytfzf.pos
 
 exit 0

@@ -110,6 +110,7 @@ alias openCPN='flatpak run org.opencpn.OpenCPN'
 
 # post-install
 alias post-install='~/.zsh/install/post-install/post-install.zsh'
+
 # qutebrowser
 alias qutebrowser='flatpak run org.qutebrowser.qutebrowser'
 

@@ -30,4 +30,9 @@ $OPT/neovim.pos
 $OPT/youtube-dl.pos
 $OPT/ytfzf.pos
 
+# wireshark
+sudo usermod -aG wireshark $USER
+# initialize sensors
+sudo sensors-detect --auto
+
 exit 0

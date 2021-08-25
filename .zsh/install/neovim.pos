@@ -1,6 +1,5 @@
 #!/usr/bin/zsh
 
-sudo dnf install -y npm yarnpkg
 sudo snap install clangd --classic
 
 FILE='/usr/share/applications/nvim.desktop'

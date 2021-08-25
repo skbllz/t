@@ -12,6 +12,7 @@ source "/home/t/.zsh/directory.zsh"
 source "/home/t/.zsh/alias.zsh"
 source "/home/t/.zsh/functions.zsh"
 source "/home/t/.zsh/fzf.zsh"
+source "/home/t/.zsh/post-install.zsh"
 
 # autoload zsh functions
 autoload -Uz zmv
@@ -22,15 +23,15 @@ autoload -U colors && colors
 
 # prompt
 if [ $(whoami) = "root" ] ; then
-    PROMPT="%{$fg_bold[red]%} --> %{$reset_color%}"
-    RPROMPT="%{$fg_bold[blue]%}[%{$reset_color%}%{$fg_bold[blue]%}
-      \      %~%{$reset_color%}%{$fg_bold[blue]%}]%{$reset_color%}"
+  PROMPT="%{$fg_bold[red]%} --> %{$reset_color%}"
+  RPROMPT="%{$fg_bold[blue]%}[%{$reset_color%}%{$fg_bold[blue]%}
+  \      %~%{$reset_color%}%{$fg_bold[blue]%}]%{$reset_color%}"
 else
-#    PROMPT="%@%{$fg_bold[blue]%} --> %{$reset_color%}"
-#    RPROMPT="%{$fg_bold[blue]%}%~%{$reset_color%}"
-    PROMPT="%{$fg_bold[blue]%} --> %{$reset_color%}"
-    RPROMPT="%{$fg_bold[blue]%}[%{$reset_color%}%{$fg_bold[blue]%}
-      \      %~%{$reset_color%}%{$fg_bold[blue]%}]%{$reset_color%}"
+  #    PROMPT="%@%{$fg_bold[blue]%} --> %{$reset_color%}"
+  #    RPROMPT="%{$fg_bold[blue]%}%~%{$reset_color%}"
+  PROMPT="%{$fg_bold[blue]%} --> %{$reset_color%}"
+  RPROMPT="%{$fg_bold[blue]%}[%{$reset_color%}%{$fg_bold[blue]%}
+  \      %~%{$reset_color%}%{$fg_bold[blue]%}]%{$reset_color%}"
 fi
 
 # substitution in the prompt (parameter and arithmetic expansion)

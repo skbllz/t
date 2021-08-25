@@ -1,8 +1,3 @@
-# # arduino
-# avr-gcc
-# avr-libc
-# avrdude
-# tinygo
 # development
 @c-development
 @development-tools
@@ -87,32 +82,6 @@ mplayer
 kodi
 transmission
 vlc
-# # rtl-sdr
-# CubicSDR
-# cmake
-# gnuradio
-# gqrx
-# gr-air-modes
-# gr-hpsdr
-# gr-hpsdr-devel
-# gr-iqbal
-# gr-osmosdr
-# gr-osmosdr-devel
-# libosmo-dsp
-# libtool
-# libusbx-devel
-# kalibrate-rtl
-# quisk
-# rtl-sdr
-# rtl-sdr-devel
-# rtl_433
-# rtl-wmbus
-# SoapySDR
-# SoapySDR-devel
-# soapy-rtlsdr
-# soapy-uhd
-# usbsoftrock
-# uhd
 # securiy
 easy-rsa
 httrack

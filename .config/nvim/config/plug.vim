@@ -63,6 +63,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-surround'
 
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 " END

@@ -41,10 +41,7 @@
 *.color15: #fdf6e3
 
 ! fonts
-URxvt.font: xft:Go Mono for Powerline=17;hinting=True;antialias=True
-URxvt.boldFont: xft:Go Mono Bold for Powerline=17;hinting=True;antialias=True
-URxvt.italicFont: xft:Go Mono Italic for Powerline=17;hinting=True;antialias=True
-URxvt.boldItalicfont:xft:Go Mono Bold Italic for Powerline=17;hinting=True;antialias=True 
+URxvt*font: xft:mononoki Nerd Font Mono:size=15
 
 !! urxvt appearance
 URxvt.letterSpace: -1

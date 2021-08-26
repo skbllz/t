@@ -1,20 +1,18 @@
 #!/usr/bin/zsh
 
-FONTS='/home/t/.local/share/fonts'
+# FONTS='/home/t/.local/share/fonts'
 
-if [[ ! -d $FONTS ]]; then
-    mkdir $FONTS
-fi
+# ! [ -d $FONTS ] && mkdir $FONTS
 
-# download
-curl -fLo  /temp https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Mononoki.zip
-# unzip and install
-unzip /tmp/mononoki.zip -d $FONTS
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
 # clear and regenerate font cache
 fc-cache -f -v
-
-if (($? == 0)); then
-    echo 'fonts is up to date!'
-fi
 
 exit 0

@@ -21,6 +21,5 @@ source $HOME/.config/nvim/config/ultisnips.vim
 source $HOME/.config/nvim/config/vim-airline.vim
 source $HOME/.config/nvim/config/vim-commentary.vim
 source $HOME/.config/nvim/config/vim-go.vim
-source $HOME/.config/nvim/config/vim-devicons.vim
 
 " END

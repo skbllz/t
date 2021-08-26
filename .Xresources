@@ -41,7 +41,10 @@
 *.color15: #fdf6e3
 
 ! fonts
-URxvt*font: xft:mononoki Nerd Font Mono:size=15
+URxvt*font: xft:Roboto Mono:size=12
+!URxvt*font: xft:Go Mono:size=12
+!URxvt*font: xft:Go Mono Powerline:size=12
+!URxvt*font: xft:DejaVu Sans Mono Powerline:size=12
 
 !! urxvt appearance
 URxvt.letterSpace: -1

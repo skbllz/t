@@ -95,8 +95,7 @@ bar {
     tray_output       HDMI-0
     position          bottom
     workspace_buttons yes
-    # font              pango:Noto Sans Mono 9
-    font              pango:Go Mono Bold for Powerline 9
+    font              pango:Roboto Mono 9
     colors {
         background #253941
         statusline #e7dfd9

@@ -13,20 +13,33 @@ exec --no-startup-id i3-msg workspace 1
 # border style
 for_window [class="^.*"] border none
 
+# assign workspaces
+workspace  1 output HDMI-0
+workspace  2 output HDMI-0
+workspace  3 output VGA-0
+workspace  4 output VGA-0
+workspace  5 output VGA-0
+workspace  6 output VGA-0
+workspace  7 output HDMI-0
+workspace  8 output VGA-0
+workspace  9 output HDMI-0
+workspace 10 output HDMI-0
+
 # assign program to specific wokspace
-assign [class=Firefox]		           2
-assign [class=Thunderbird]	         3
-assign [class=Nautilus]		           4
-assign [class=Evince]		             5
-assign [class=Foliate]		           6
-assign [class=calibre]		           6
-assign [class=FreeTube]              7
-assign [class=Rhythmbox]	           8
-assign [class=vlc]		               9
-assign [class=CubicSDR]              9
-assign [class=Kodi]		               9
-assign [class=GParted] 		          10
-assign [class=qutebrowser]          10
+assign [class="urxvt256c, URxvt"] 1
+assign [class=Firefox]		          2
+assign [class=qutebrowser]          2
+assign [class=Thunderbird]	        3
+assign [class=Nautilus]		          4
+assign [class=Evince]		            5
+assign [class=Foliate]		          6
+assign [class=calibre]		          6
+assign [class=FreeTube]             7
+assign [class=Rhythmbox]	          8
+assign [class=vlc]		              9
+assign [class=CubicSDR]             9
+assign [class=Kodi]		              9
+assign [class=GParted] 		         10
 
 # program launcher
 bindsym Menu           exec i3-dmenu-desktop

@@ -41,7 +41,7 @@
 *.color15: #fdf6e3
 
 ! fonts
-URxvt*font: xft:Roboto Mono:size=12
+URxvt*font: xft:Roboto Mono:size=13
 !URxvt*font: xft:Go Mono:size=12
 !URxvt*font: xft:Go Mono Powerline:size=12
 !URxvt*font: xft:DejaVu Sans Mono Powerline:size=12

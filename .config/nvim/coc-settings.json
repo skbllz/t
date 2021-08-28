@@ -14,7 +14,7 @@
                 "start"
             ],
             "filetypes": [
-                "sh"
+                "sh", "zsh"
             ],
             "ignoredRootPaths": [
                 "~"

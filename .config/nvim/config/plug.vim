@@ -16,9 +16,6 @@ Plug 'sudar/vim-arduino-syntax'
 Plug 'sudar/vim-arduino-snippets'
 Plug 'stevearc/vim-arduino'
 
-" bash
-Plug 'bash-lsp/bash-language-server'
-
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'

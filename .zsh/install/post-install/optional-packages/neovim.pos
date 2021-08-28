@@ -6,10 +6,13 @@ EXISTS=$(snap list | grep clangd | cut -d ' ' -f1)
 GREP=$(grep 'Terminal=false' $FILE)
 
 # snapd
-if [[ -z $EXISTS ]] then; 
+if [[ -z $EXISTS ]] then;
 	echo "Instaling clangd..."
 	sudo snap install clangd --classic
 fi
+
+# bash language server
+sudo npm i -g bash-language-server
 
 # plug
 if [[ -z $PLUG ]] then;

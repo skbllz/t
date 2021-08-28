@@ -69,4 +69,7 @@ au BufRead,BufNewFile *.html let b:comment_leader = '<!--'
 " CSS
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
+" removing all trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " END

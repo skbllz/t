@@ -5,8 +5,6 @@ exec --no-startup-id i3-msg exec urxvt256c
 exec --no-startup-id i3-msg exec firefox
 exec --no-startup-id i3-msg exec thunderbird
 exec --no-startup-id i3-msg exec nautilus
-# exec_always --no-startup-id com.github.johnfactotum.Foliate
-# exec --no-startup-id i3-msg exec evince '/home/t/Downloads/"New Perspectives on HTML 5 and CSS.pdf"'
 exec --no-startup-id i3-msg exec "/opt/FreeTube/freetube %U"
 exec --no-startup-id i3-msg workspace 1
 
@@ -23,10 +21,10 @@ workspace  6 output VGA-0
 workspace  7 output HDMI-0
 workspace  8 output VGA-0
 workspace  9 output HDMI-0
-workspace 10 output HDMI-0
+workspace 10 output VGA-0
 
 # assign program to specific wokspace
-assign [class="urxvt256c, URxvt"] 1
+assign [class="urxvt256c, URxvt"]   1
 assign [class=Firefox]		          2
 assign [class=qutebrowser]          2
 assign [class=Thunderbird]	        3
@@ -183,7 +181,6 @@ mode "resize" {
         bindsym Escape      mode "default"
 }
 
-# alt
 # kill focused window
 bindsym Mod1+x kill
 
@@ -203,21 +200,6 @@ bindsym Mod1+Shift+r        restart
 bindsym Mod1+Ctrl+e         exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # not in use
-
-# exec --no-startup-id i3-msg exec "DESKTOP_SESSION=gnome /opt/minitube/build/target/minitube"
-
-# assign [class=jetbrains-studio]     10
-# assign [class=Virt-viewer]   	      10
-
-## assign workspaces to screens
-# workspace  1 output VGA-0
-# workspace 10 output HDMI-0
-
-# floating windows
-# for_window [class=jetbrains-studio]	floating enable
-
-# bindsym Mod4+m         exec "DESKTOP_SESSION=gnome /opt/minitube/build/target/minitube"
-# bindsym Mod4+d         exec ~/Projects/go/bin/fyne_demo
 
 # xev
 # xprop

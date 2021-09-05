@@ -5,6 +5,7 @@ setopt CORRECT # correct commands
 # general
 alias bc='bc -q'
 
+alias cat='bat'
 alias cdf='cd $(fd -d5 --hidden | fzf)'
 alias chmod='chmod -c'
 alias chown='chown -c'

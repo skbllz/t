@@ -11,6 +11,7 @@ git
 golang
 gsl
 gsl-devel
+jq
 libcurl
 libcurl-devel
 libsqlite3x-devel
@@ -39,10 +40,10 @@ gnome-calculator
 gnome-epub-thumbnailer
 gnome-screenshot
 # i3pystatus
-python3-colour 
-python3-dbus 
-python3-devel 
-python3-netifaces 
+python3-colour
+python3-dbus
+python3-devel
+python3-netifaces
 python3-psutil
 # multimedia
 @multimedia
@@ -67,7 +68,7 @@ volumeicon
 x264
 xset
 # neovim
-npm 
+npm
 yarnpkg
 # office
 evince

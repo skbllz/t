@@ -17,7 +17,7 @@ dnf_post() {
 	#update
 	sudo dnf update -y
 	# packages
-	sudo dnf install -y `cat $DNF/data | grep -v '#'`
+	sudo dnf install -y `/usr/bin/cat $DNF/data | grep -v '#'`
 }
 
 dnf_post

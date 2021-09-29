@@ -3,7 +3,6 @@
 @development-tools
 bear
 binutils
-ccls
 clang
 cmake
 flex-devel

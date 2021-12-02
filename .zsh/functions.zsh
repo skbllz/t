@@ -48,6 +48,11 @@ data_science() {
 	docker run --rm -it -v "$(pwd)":/data datasciencetoolbox/dsatcl2e
 }
 
+# dnf install
+dnf_install() {
+	sudo dnf install -y `/usr/bin/cat /home/t/.zsh/install/post-install/dnf-packages/data | grep -v '#'`
+}
+
 # docker
 mongo() {
 
@@ -107,7 +112,8 @@ postgres() {
 }
 
 # make distro usb
-dd_distro_usb() { sudo dd if=$1 of=${2:-/dev/sdc} bs=1M status=progress oflag=direct conv=sync }
+dd_fedora_usb() { sudo dd if=$1 of=${2:-/dev/sdc} bs=1M status=progress oflag=direct conv=sync }
+dd_windows_usb() { sudo woeusb --device $1 ${2:-/dev/sdc} --target-filesystem ntfs }
 
 # mkdir
 mkcdir() { mkdir -p -- "$1" && cd -P -- "$1" }

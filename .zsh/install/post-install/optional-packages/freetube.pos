@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 
 # version
-export VER="${1:-0.14.0}"
+export VER="${1:-0.15.1}"
 
 # get existing version
 EXISTS=$(rpm -qa | grep freetube | cut -d'-' -f2)

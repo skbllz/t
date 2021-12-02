@@ -39,6 +39,7 @@ Projects/go/pkg
 .zcompdump.zwc
 
 .config/bleachbit/
+.config/calibre/
 .config/coc/
 .config/configstore/
 .config/dconf/

@@ -2,6 +2,8 @@
 # post-install.zsh
 # aug 21
 
+source ~/.zsh/functions.zsh
+
 # directories
 DNF=~/.zsh/install/post-install/dnf-packages
 OPT=~/.zsh/install/post-install/optional-packages
@@ -17,7 +19,7 @@ dnf_post() {
 	#update
 	sudo dnf update -y
 	# packages
-	sudo dnf install -y `/usr/bin/cat $DNF/data | grep -v '#'`
+	dnf_install
 }
 
 dnf_post
